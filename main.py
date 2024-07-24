@@ -168,7 +168,10 @@ class Emissao_DARJ:
         pyautogui.moveTo(screen_width/2, screen_height/2)
         
         sleep(2)
-        download_coord = pyautogui.locateCenterOnScreen("refer_images/image.png")
+        download_coord = pyautogui.locateCenterOnScreen(
+            image="refer_images/image.png",
+            minSearchTime=10
+        )
         pyautogui.moveTo(download_coord)
         pyautogui.click()
         abs_path = abs_path + "\\"
