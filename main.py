@@ -199,4 +199,5 @@ if __name__ == "__main__":
     for cnpj in cnpjs:
         Emissao_DARJ(cnpj=cnpj)
         
+        
     print("PROCESSO FINALIZADO")
